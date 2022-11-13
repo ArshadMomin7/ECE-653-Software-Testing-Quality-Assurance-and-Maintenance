@@ -1,0 +1,79 @@
+ghub: ''
+url: ist-git@git.uwaterloo.ca:stqam-1221/class/a5momin
+student: 20986176
+watiam: a5momin
+late:
+  count: 0
+total_marks: 51.0
+1a:
+  mark: 0
+  comments: |
+    The test case executes the fault on line 8.
+1b:
+  mark: 2
+  comments: |
+    none
+1c:
+  mark: 0
+  comments: |
+    The test case results in a failure (expected output is different from actual output).
+1d:
+  mark: 1
+  comments: |
+    Should describe the complete state, but values of n, p, q, and p1 are missing.
+    pc should be at line 8. In a correct program, the values of q and p1 should be different.
+1e:
+  mark: 2
+  comments: |
+    none
+2a:
+  mark: 3
+  comments: |
+    none
+2b:
+  mark: 4
+  comments: |
+    none
+2c:
+  mark: 3
+  comments: "The derivation tree is incomplete: should write down the premises of\
+    \ \"<repeat ..., [x=1]> \u21D3 [x=0]\".\n"
+2d:
+  mark: 3
+  comments: |
+    Missing evaluation of b in both cases. Should state explicitly or include in the derivation trees.
+3b:
+  mark: 5.5
+  comments: |
+    Should clearly indicate what mutation operator you are applying.
+3c:
+  mark: 2.5
+  comments: |
+    Should focus on information about the expected program behaviour.
+3a:
+  mark: 3.0
+  comments: |
+    coverage: 3.0/3;mutation: 0/3
+    Marking partially automated
+4a:
+  mark: 10.0
+  comments: |
+    Lack of coverage explanation: none
+
+    Marking partially automated
+4b:
+  mark: 4
+  comments: |
+    Lack of coverage explanation: none
+
+    Marking partially automated
+4c:
+  mark: 3
+  comments: |
+    Marking automated
+4d:
+  mark: 5.0
+  comments: |
+    Marking automated
+stats_visitor_tests: 26/26
+undef_visitor_tests: 10/10
