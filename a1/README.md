@@ -1,7 +1,7 @@
 # ECE653 : Assignment 1
 
 # Fault error detection and Error state identification  
-def matmul(a, b):
+``def matmul(a, b):
  """  
  Returns the result of multiplying two input matrices.  
   
@@ -15,7 +15,7 @@ def matmul(a, b):
  for i in range(n):  
  for j in range(q):  
  c[i][j] = sum(a[i][k] * b[k][j] for k in range(p))  
- return c  
+ return c `` 
 
  From the above Python program we identified the fault, error identification, the first error state and failure in execution from various test cases.
  We generated a Control Flow graph of the function using graphviz considering line of code as node number. (Reference : https://dreampuf.github.io/GraphvizOnline/)  
