@@ -1,14 +1,26 @@
-# ECE453/CS447/CS647 : Assignment 2
+# ECE 653 : Assignment 2
+```  
+1 havoc x, y;
+2 if x + y > 15 then {
+3 x = x + 7;
+4 y = y - 12 }
+5 else {
+6 y = y + 10;
+7 x = x - 2 };
+8
+9 x = x + 2;
+10
+11 if 2 * (x + y) > 21 then {
+12 x = x * 3;
+13 y = y * 2 }
+14 else {
+15 x = x * 4;
+16 y = y * 3 + x };
+17 skip  
+```
 
-Replace FIRST_NAME, LAST_NAME, WATIAM, and STUDENT_ID, EMAIL in
-`user.yml` by your first and last name, WatIAM id, student number, and
-email, respectively. Note that your WatIAM id is the ID you use to
-login to Quest. Use plain ASCII characters as much as possible.
+1. Computed the number of execution path by condition statement (True/False) and identified the test case by Symbolic execution method. 
+2. Verified validity of FOL (First order Logic).
+3. Implementation of a parser and interpreter for the WHILE language inlcuding symbolic execution with and without if-else case and while - statements.
 
-Do not change the format of the file. We will parse it
-automatically. Only enter the information requested.
 
-Commit your changes and submit on GitLab.
-
-You can validate your yaml file using online YAML parser:
-http://yaml-online-parser.appspot.com/
