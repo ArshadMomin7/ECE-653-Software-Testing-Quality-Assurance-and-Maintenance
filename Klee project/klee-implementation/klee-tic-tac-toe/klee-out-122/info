@@ -1,0 +1,23 @@
+klee --libc=uclibc --posix-runtime --external-calls=all --only-output-states-covering-new --max-tests=50 --max-time=300 --write-cov --write-test-info --write-paths klee-tic-tac-toe.bc
+PID: 10519
+Using monotonic steady clock with 1/1000000000s resolution
+Started: 2022-08-10 02:55:03
+BEGIN searcher description
+<InterleavedSearcher> containing 2 searchers:
+RandomPathSearcher
+WeightedRandomSearcher::CoveringNew
+</InterleavedSearcher>
+END searcher description
+Finished: 2022-08-10 02:55:04
+Elapsed: 00:00:01
+KLEE: done: explored paths = 512
+KLEE: done: avg. constructs per query = 11
+KLEE: done: total queries = 37
+KLEE: done: valid queries = 0
+KLEE: done: invalid queries = 37
+KLEE: done: query cex = 37
+
+KLEE: done: total instructions = 260601
+KLEE: done: completed paths = 512
+KLEE: done: partially completed paths = 0
+KLEE: done: generated tests = 48

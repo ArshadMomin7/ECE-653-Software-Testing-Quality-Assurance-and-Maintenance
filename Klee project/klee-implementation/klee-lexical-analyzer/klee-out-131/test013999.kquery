@@ -1,0 +1,35 @@
+array ch_klee[10] : w32 -> w8 = symbolic
+array model_version[4] : w32 -> w8 = symbolic
+(query [(Eq 1
+             (ReadLSB w32 0 model_version))
+         (Eq 35 (Read w8 9 ch_klee))
+         (Sle 97
+              N0:(SExt w32 (Read w8 0 ch_klee)))
+         (Sle N0 122)
+         (Sle 97
+              N1:(SExt w32 (Read w8 1 ch_klee)))
+         (Sle N1 122)
+         (Sle 97
+              N2:(SExt w32 (Read w8 2 ch_klee)))
+         (Sle N2 122)
+         (Sle 97
+              N3:(SExt w32 (Read w8 3 ch_klee)))
+         (Sle N3 122)
+         (Sle 97
+              N4:(SExt w32 (Read w8 4 ch_klee)))
+         (Sle N4 122)
+         (Sle 97
+              N5:(SExt w32 (Read w8 5 ch_klee)))
+         (Sle N5 122)
+         (Sle 97
+              N6:(SExt w32 (Read w8 6 ch_klee)))
+         (Sle N6 122)
+         (Sle 97
+              N7:(SExt w32 (Read w8 7 ch_klee)))
+         (Sle N7 122)
+         (Eq false
+             (Sle 97
+                  N8:(SExt w32 (Read w8 8 ch_klee))))
+         (Sle 48 N8)
+         (Sle N8 57)]
+        false)

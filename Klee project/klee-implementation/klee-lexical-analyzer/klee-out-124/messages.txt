@@ -1,0 +1,3 @@
+KLEE: Using STP solver backend
+KLEE: ERROR: lexcial_analyzer.c:151: free of global
+KLEE: NOTE: now ignoring this error at this location

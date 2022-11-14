@@ -1,0 +1,7 @@
+Grade: B
+
+You've used KLEE to verify two small programs: a lexical analyzer and
+a tic-tac-toe game. These programs are under 200 lines of code and not
+widely used, so it's not surprising that you might find issues in
+them. I was hoping that you would work with more sophisticated
+benchmarks. Your writeup is reasonably complete.

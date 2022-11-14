@@ -1,0 +1,23 @@
+klee --libc=uclibc --posix-runtime --only-output-states-covering-new --max-tests=50 --max-time=300 --write-cov --write-test-info --write-paths klee-lexical-analyzer.bc
+PID: 14426
+Using monotonic steady clock with 1/1000000000s resolution
+Started: 2022-08-10 03:01:57
+BEGIN searcher description
+<InterleavedSearcher> containing 2 searchers:
+RandomPathSearcher
+WeightedRandomSearcher::CoveringNew
+</InterleavedSearcher>
+END searcher description
+Finished: 2022-08-10 03:02:29
+Elapsed: 00:00:32
+KLEE: done: explored paths = 34984
+KLEE: done: avg. constructs per query = 23
+KLEE: done: total queries = 318
+KLEE: done: valid queries = 173
+KLEE: done: invalid queries = 145
+KLEE: done: query cex = 318
+
+KLEE: done: total instructions = 7148862
+KLEE: done: completed paths = 0
+KLEE: done: partially completed paths = 34984
+KLEE: done: generated tests = 1
