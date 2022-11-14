@@ -1,14 +1,18 @@
-# ECE453/CS447/CS647: Assignment 3
+# ECE 653 : Assignment 3
+```
+1 assume (n >= 0);
+2 r := 0;
+3 i := 0;
+4 p := 1;
+5 while not (i = n) do
+6 {
+7 r = r - p;
+8 p = 2 * p;
+9 r = r + p;
+10 i = i + 1;
+11 }  
+```
 
-Replace FIRST_NAME, LAST_NAME, WATIAM, and STUDENT_ID, EMAIL in
-`user.yml` by your first and last name, WatIAM id, student number, and
-email, respectively. Note that your WatIAM id is the ID you use to
-login to Quest. Use plain ASCII characters as much as possible.
-
-Do not change the format of the file. We will parse it
-automatically. Only enter the information requested.
-
-Commit your changes and submit on GitHub.
-
-You can validate your yaml file using online YAML parser:
-http://yaml-online-parser.appspot.com/
+1. Using Hoare Logic method derived the validity of the above program.
+2. Performed Verification using Dafny Verification tool. (_Refer Dafny folder_)
+3. Extended the symbolic execution for while language to achieve 100% branch coverage (_Refer wlang folder_) and identified the missing inductive invariant for verification of the program.
